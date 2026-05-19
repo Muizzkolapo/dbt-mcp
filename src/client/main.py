@@ -14,7 +14,7 @@ TOOL_RESPONSE_TRUNCATION = 100  # set to None for no truncation
 
 
 llm_client = OpenAI()
-messages = []
+messages: list[dict[str, str]] = []
 
 
 async def main():
